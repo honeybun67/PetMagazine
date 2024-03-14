@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetMagazine.Data", "PetMaga
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetMagazine.Services", "PetMagazine.Services\PetMagazine.Services.csproj", "{A545A4F0-168C-4B68-9366-9579782F3814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMagazine.FormApp", "PetMagazine.FormApp\PetMagazine.FormApp.csproj", "{E493F7F3-5DDA-45A2-87AD-56814B8EAB4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetMagazine.FormApp", "PetMagazine.FormApp\PetMagazine.FormApp.csproj", "{E493F7F3-5DDA-45A2-87AD-56814B8EAB4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMagazine.Tests", "PetMagazine.Tests\PetMagazine.Tests.csproj", "{830DAB93-745C-4260-AC8F-951B4517565B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetMagazine.Tests", "PetMagazine.Tests\PetMagazine.Tests.csproj", "{830DAB93-745C-4260-AC8F-951B4517565B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetMagazine.Common", "PetMagazine.Common\PetMagazine.Common.csproj", "{2CB29EC8-0FF8-41ED-8130-228F3E930958}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{830DAB93-745C-4260-AC8F-951B4517565B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830DAB93-745C-4260-AC8F-951B4517565B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830DAB93-745C-4260-AC8F-951B4517565B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB29EC8-0FF8-41ED-8130-228F3E930958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB29EC8-0FF8-41ED-8130-228F3E930958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB29EC8-0FF8-41ED-8130-228F3E930958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB29EC8-0FF8-41ED-8130-228F3E930958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

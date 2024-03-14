@@ -6,7 +6,7 @@ namespace PetMagazine.Data.Models
 
     public class Pet
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [MaxLength (150)]
         public string Name { get; set; }
@@ -22,6 +22,6 @@ namespace PetMagazine.Data.Models
         [MaxLength(150)]
         public string KindOfPet { get; set; }
 
-        public virtual ICollection<PetCategory> categories { get; set; } = new HashSet<PetCategory> (); 
+        public virtual ICollection<PetCategory> Categories { get; set; } = new HashSet<PetCategory> (); 
     }
 }
