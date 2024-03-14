@@ -1046,6 +1046,16 @@
           }
         }
       },
+      "PetMagazine.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PetMagazine.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetMagazine.Common.dll": {}
+        }
+      },
       "PetMagazine.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2885,6 +2895,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "PetMagazine.Common/1.0.0": {
+      "type": "project",
+      "path": "../PetMagazine.Common/PetMagazine.Common.csproj",
+      "msbuildProject": "../PetMagazine.Common/PetMagazine.Common.csproj"
+    },
     "PetMagazine.Data/1.0.0": {
       "type": "project",
       "path": "../PetMagazine.Data/PetMagazine.Data.csproj",
@@ -2893,6 +2908,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "PetMagazine.Common >= 1.0.0",
       "PetMagazine.Data >= 1.0.0"
     ]
   },
@@ -2902,11 +2918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
       "projectName": "PetMagazine.Services",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.Services\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2923,8 +2939,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj"
+            "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj"
+            },
+            "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj"
             }
           }
         }

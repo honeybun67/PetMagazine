@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P/9ceL0Uykt69FGKnBkcYO9yPYDTHtbY866FXcl24zHph4ri7dy8hyGJKcJJf/2D/JTP0nUTIfR/Mb4HWuuLtA==",
+  "dgSpecHash": "sySjTNB3bMuVo32vRruRegkGqJTC+3zP+Coo9DFyUc4JWysKK3oWDTHkLm6ZBr5ZV4s0pB+ugP65HbaBC2vRow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Нова папка\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
