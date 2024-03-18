@@ -10,7 +10,15 @@
     using System.Threading.Tasks;
     public class CategoryService
     {
-        private AppDbContext context = new AppDbContext();
+        private AppDbContext context;
+        public CategoryService()
+        {
+            context = new AppDbContext();
+        }
+        public CategoryService(AppDbContext context)
+        {
+            this.context = context;
+        }
 
         public int Add(Category category)
         {
@@ -27,6 +35,28 @@
             this.context.SaveChanges();
             return category.Id;
         }
+        public List<Category> GetCategories(int page = 1, int itemsPerPage = 10, bool ascSort = true)
+        {
+            IQueryable<Category> result = null;
+
+            if (ascSort)
+            {
+                result = this.context.Categories.OrderBy(x => x.Name);
+            }
+            else
+            {
+                result = this.context.Categories.OrderByDescending(x => x.Name);
+            }
+
+            return result
+                  .Skip((page - 1) * itemsPerPage)
+                  .Take(itemsPerPage)
+                  .ToList();
+        }
+        public string[] GetAllCategories()
+        {
+            return this.context.Categories.Select(x => x.Name).ToArray();
+        }
         public Category? GetCategoryById(int id)
         {
             return this.context.Categories.Find(id);
@@ -34,6 +64,10 @@
         public int GetCategoriesCount()
         {
             return context.Categories.Count();
+        }
+        public Category? GetCategoryByName(string name)
+        {
+            return this.context.Categories.FirstOrDefault(x => x.Name == name);
         }
         public int EditCategory(int id, string name)
         {
@@ -61,6 +95,10 @@
             context.Categories.Remove(category);
             context.SaveChanges();
             return id;
+        }
+        public List<int> GetCategoriesId()
+        {
+            return this.context.Categories.Select(x => x.Id).ToList();
         }
     }
 }
