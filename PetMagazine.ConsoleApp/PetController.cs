@@ -15,7 +15,7 @@
 
         //Pagination variables
         private int currentPage = 1;
-        private int itemsPerPage = 5;
+        private int animalsPerPage = 5;
         private int pageCount = 0;
         private int totalItems = 0;
         private bool ascSort = true;
@@ -30,7 +30,7 @@
                 {
                     PrintPets();
 
-                    Console.WriteLine("[A]dd; [P]revious; [N]ext; [E]dit; [D]elete; [S]ort; [I]tems per page; [AA]dopt");
+                    Console.WriteLine("[A]dd; [P]revious; [N]ext; [E]dit; [D]elete; [S]ort; [AN]imals per page; [AA]dopt");
 
                     string cmd = GetCmd();
 
@@ -57,19 +57,19 @@
                             DeleteAction();
                             break;
                         case "S":
-                        case "Sort":
+                        case "SORT":
                             SortAction();
                             break;
-                        case "I":
-                        case "Items":
+                        case "AN":
+                        case "ANIMALS":
                             ChangePaginationAction();
                             break;
                         case "AA":
-                        case "Adopt":
+                        case "ADOPT":
                             AdoptAction();
                             break;
                         case "SEED":
-                            SeedDataEction();
+                            SeedDataAction();
                             break;
                         case "EX":
                         case "EXIT":
@@ -104,20 +104,20 @@
             Console.ForegroundColor = ConsoleColor.White;
         }
 
-        private void SeedDataEction()
+        private void SeedDataAction()
         {
-            for (int i = 1; i < 10; i++)
+            for (int i = 11; i <= 30; i++)
             {
-                service.Add(new Pet {Name = $"Pet {i}" });
+                service.Add(new Pet { Name = $"Pet {i} ", Age = i, Breed = $"breed {i} ", Owner = $"owner {i} ", KindOfPet =$"kind {i}"});
             }
             UpdatePagination();
         }
 
         private void ChangePaginationAction()
         {
-            Console.Write("Enter items per page: ");
-            itemsPerPage = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Items per page is set to {itemsPerPage}!");
+            Console.Write("Enter animals per page: ");
+            animalsPerPage = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Animals per page is set to {animalsPerPage}!");
             Thread.Sleep(2000);
             UpdatePagination();
         }
@@ -132,7 +132,7 @@
             Console.Write("Enter id: ");
             int deleteId = int.Parse(Console.ReadLine());
             service.DeletePet(deleteId);
-            Console.WriteLine(string.Format(OutputMessages.DeleteCategory, deleteId));
+            Console.WriteLine(string.Format(OutputMessages.DeletePet, deleteId));
             Thread.Sleep(2000);
             UpdatePagination();
         }
@@ -143,8 +143,8 @@
             int editId = int.Parse(Console.ReadLine());
             Console.Write("Enter name: ");
             string newName = Console.ReadLine();
-            int id = service.EditPet(new Pet() { Name = newName });
-            Console.WriteLine(string.Format(OutputMessages.EditCategory, id));
+            service.EditPet(new Pet() { Name = newName });
+            Console.WriteLine(string.Format(OutputMessages.EditCategory, editId));
             Thread.Sleep(2000);
         }
 
@@ -164,7 +164,15 @@
         {
             Console.Write("Enter pet name: ");
             string name = Console.ReadLine();
-            int id = service.Add(new Pet() { Name = name });
+            Console.Write("Enter age: ");
+            int age = int.Parse(Console.ReadLine());
+            Console.Write("Enter breed: ");
+            string breed = Console.ReadLine();
+            Console.Write("Enter kind of pet: ");
+            string kind = Console.ReadLine();
+            Console.Write("Enter owner name: ");
+            string owner = Console.ReadLine();
+            int id = service.Add(new Pet() { Name = name, Age = age, Breed = breed, KindOfPet = kind, Owner = owner });
             Console.WriteLine(string.Format(OutputMessages.AddPet, id, name));
             Thread.Sleep(2000);
             UpdatePagination();
@@ -180,12 +188,12 @@
         private void UpdatePagination()
         {
             totalItems = service.GetPetsCount();
-            pageCount = (int)Math.Ceiling((double)totalItems / itemsPerPage);
+            pageCount = (int)Math.Ceiling((double)totalItems / animalsPerPage);
         }
 
         private void PrintPets()
         {
-            List<Pet> petList = service.GetPets(currentPage, itemsPerPage, ascSort);
+            List<Pet> petList = service.GetPets(currentPage, animalsPerPage, ascSort);
             string head = $"| {"Id",4} | {"Name",10} |";
 
             Console.ForegroundColor = ConsoleColor.DarkCyan;

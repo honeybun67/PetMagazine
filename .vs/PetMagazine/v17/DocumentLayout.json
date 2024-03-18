@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A545A4F0-168C-4B68-9366-9579782F3814}|PetMagazine.Services\\PetMagazine.Services.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.services\\petservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A545A4F0-168C-4B68-9366-9579782F3814}|PetMagazine.Services\\PetMagazine.Services.csproj|solutionrelative:petmagazine.services\\petservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1595F5B0-819E-431E-B90F-D0E7A4685842}|PetMagazine.ConsoleApp\\PetMagazine.ConsoleApp.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.consoleapp\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1595F5B0-819E-431E-B90F-D0E7A4685842}|PetMagazine.ConsoleApp\\PetMagazine.ConsoleApp.csproj|solutionrelative:petmagazine.consoleapp\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1595F5B0-819E-431E-B90F-D0E7A4685842}|PetMagazine.ConsoleApp\\PetMagazine.ConsoleApp.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1595F5B0-819E-431E-B90F-D0E7A4685842}|PetMagazine.ConsoleApp\\PetMagazine.ConsoleApp.csproj|solutionrelative:petmagazine.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.data\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|solutionrelative:petmagazine.data\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A545A4F0-168C-4B68-9366-9579782F3814}|PetMagazine.Services\\PetMagazine.Services.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.services\\enums\\petsortby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A545A4F0-168C-4B68-9366-9579782F3814}|PetMagazine.Services\\PetMagazine.Services.csproj|solutionrelative:petmagazine.services\\enums\\petsortby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|solutionrelative:petmagazine.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.data\\models\\petcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|solutionrelative:petmagazine.data\\models\\petcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36532EBA-7133-4C10-908A-409F97FFC95F}|PetMagazine.Data\\PetMagazine.Data.csproj|solutionrelative:petmagazine.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1595F5B0-819E-431E-B90F-D0E7A4685842}|PetMagazine.ConsoleApp\\PetMagazine.ConsoleApp.csproj|c:\\users\\\u043C\u0443\u0441\u0442\u0430\u0444\u0430\\desktop\\it_kariera\\\u043C07-sd\\petmagazine\\petmagazine.consoleapp\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,89 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PetSortBy.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Services\\ENums\\PetSortBy.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Services\\ENums\\PetSortBy.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Services\\ENums\\PetSortBy.cs",
-              "RelativeToolTip": "PetMagazine.Services\\ENums\\PetSortBy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:20:08.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Data\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\Category.cs",
-              "RelativeToolTip": "PetMagazine.Data\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:20:02.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PetCategory.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\PetCategory.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Data\\Models\\PetCategory.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\PetCategory.cs",
-              "RelativeToolTip": "PetMagazine.Data\\Models\\PetCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:19:58.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pet.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\Pet.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Data\\Models\\Pet.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\Models\\Pet.cs",
-              "RelativeToolTip": "PetMagazine.Data\\Models\\Pet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:18:36.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "PetMagazine.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "PetMagazine.ConsoleApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:14:24.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Data\\AppDbContext.cs",
-              "RelativeToolTip": "PetMagazine.Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:14:12.18Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -136,41 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\CategoryController.cs",
-              "RelativeDocumentMoniker": "PetMagazine.ConsoleApp\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\CategoryController.cs",
-              "RelativeToolTip": "PetMagazine.ConsoleApp\\CategoryController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAQwJEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:05:55.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PetController.cs",
               "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\PetController.cs",
               "RelativeDocumentMoniker": "PetMagazine.ConsoleApp\\PetController.cs",
               "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\PetController.cs",
               "RelativeToolTip": "PetMagazine.ConsoleApp\\PetController.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAYwHIAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwGwAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:05:36.913Z",
+              "WhenOpened": "2024-03-18T21:33:22.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PetService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Services\\PetService.cs",
-              "RelativeDocumentMoniker": "PetMagazine.Services\\PetService.cs",
-              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.Services\\PetService.cs",
-              "RelativeToolTip": "PetMagazine.Services\\PetService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAH0AAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\CategoryController.cs",
+              "RelativeDocumentMoniker": "PetMagazine.ConsoleApp\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0443\u0441\u0442\u0430\u0444\u0430\\Desktop\\IT_kariera\\\u041C07-SD\\PetMagazine\\PetMagazine.ConsoleApp\\CategoryController.cs",
+              "RelativeToolTip": "PetMagazine.ConsoleApp\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:41:42.974Z",
+              "WhenOpened": "2024-03-18T21:33:21.18Z",
               "EditorCaption": ""
             }
           ]
