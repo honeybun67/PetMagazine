@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MainForm";
+            btnPet = new Button();
+            btnCategory = new Button();
+            SuspendLayout();
+            // 
+            // btnPet
+            // 
+            btnPet.Location = new Point(97, 137);
+            btnPet.Name = "btnPet";
+            btnPet.Size = new Size(205, 117);
+            btnPet.TabIndex = 0;
+            btnPet.Text = "Pet";
+            btnPet.UseVisualStyleBackColor = true;
+            // 
+            // btnCategory
+            // 
+            btnCategory.Location = new Point(383, 143);
+            btnCategory.Name = "btnCategory";
+            btnCategory.Size = new Size(206, 111);
+            btnCategory.TabIndex = 1;
+            btnCategory.Text = "Category";
+            btnCategory.UseVisualStyleBackColor = true;
+            btnCategory.Click += btnCategory_Click;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnCategory);
+            Controls.Add(btnPet);
+            Name = "MainForm";
+            Text = "MainForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnPet;
+        private Button btnCategory;
     }
 }
