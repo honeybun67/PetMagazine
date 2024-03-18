@@ -1,10 +1,12 @@
-﻿namespace PetMagazine.ConsoleApp
+﻿using PetMagazine.Services;
+
+namespace PetMagazine.ConsoleApp
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            new PetController().Action();
         }
     }
 }

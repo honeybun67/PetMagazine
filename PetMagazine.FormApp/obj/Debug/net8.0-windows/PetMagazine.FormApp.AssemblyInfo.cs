@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMagazine.FormApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f39e98a3087c831f1f0b382e1112550eb4a0f02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cd563b478257ee9b2780bbfd6e08a5025aa69c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMagazine.FormApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMagazine.FormApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

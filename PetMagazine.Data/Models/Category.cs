@@ -18,6 +18,6 @@
 
         [MaxLength(150)]
         public string Achievements { get; set; }
-        public ICollection<PetCategory> Pets { get; set; } = new HashSet<PetCategory>();
+        public virtual ICollection<PetCategory> Pets { get; set; } = new HashSet<PetCategory>();
     }
 }
