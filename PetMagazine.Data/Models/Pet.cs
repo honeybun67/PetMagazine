@@ -17,7 +17,7 @@ namespace PetMagazine.Data.Models
         public int Age { get; set; }
 
         [MaxLength(150)]
-        public string Owner { get; set; }
+        public string? Owner { get; set; }
 
         [MaxLength(150)]
         public string KindOfPet { get; set; }

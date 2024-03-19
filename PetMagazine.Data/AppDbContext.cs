@@ -4,9 +4,9 @@
     using PetMagazine.Data.Models;
     public class AppDbContext:DbContext
     {
-        private const string ConnectionString = @"Server=DESKTOP-G43Q1LS; Database=PetDb; Trusted_Connection=True; TrustServerCertificate=True";
+        private const string ConnectionString = @"Server=.; Database=PetDb; Trusted_Connection=True; TrustServerCertificate=True";
 
-        public DbSet<Pet> MyProperty { get; set; }
+        public DbSet<Pet> Pets { get; set; }
 
         public DbSet<PetCategory> PetCategories { get; set; }
 
