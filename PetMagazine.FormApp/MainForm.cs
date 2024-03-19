@@ -24,5 +24,16 @@ namespace PetMagazine.FormApp
             CategoryForm form = new CategoryForm(context);
             form.ShowDialog();
         }
+
+        private void btnPet_Click(object sender, EventArgs e)
+        {
+            PetForm form = new PetForm();
+            form.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
