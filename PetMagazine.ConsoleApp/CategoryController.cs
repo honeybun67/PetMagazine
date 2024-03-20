@@ -26,7 +26,7 @@
                 Console.Clear();
                 try
                 {
-                    PrintGanres();
+                    PrintCategory();
 
                     Console.WriteLine("[A]dd; [P]revious; [N]ext; [E]dit; [D]elete; [S]ort; [I]tems per page");
 
@@ -81,10 +81,10 @@
 
         private static void ExceptionAction(Exception ex)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(ex.Message);
             Thread.Sleep(3000);
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
         }
 
         private void SeedDataEction()
@@ -166,7 +166,7 @@
             pageCount = (int)Math.Ceiling((double)totalItems / itemsPerPage);
         }
 
-        private void PrintGanres()
+        private void PrintCategory()
         {
             List<Category> categoryList = service.GetCategories(currentPage, itemsPerPage, ascSort);
             string head = $"| {"Id",4} | {"Name",10} |";
