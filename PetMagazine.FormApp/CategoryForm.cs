@@ -1,19 +1,13 @@
-﻿using PetMagazine.Common;
-using PetMagazine.Data;
-using PetMagazine.Data.Models;
-using PetMagazine.Services;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace PetMagazine.FormApp
+﻿namespace PetMagazine.FormApp
 {
+    using PetMagazine.Common;
+    using PetMagazine.Data;
+    using PetMagazine.Data.Models;
+    using PetMagazine.Services;
+    using System;
+    using System.Data;
+    using System.Linq;
+    using System.Windows.Forms;
     public partial class CategoryForm : Form
     {
         CategoryService service;
