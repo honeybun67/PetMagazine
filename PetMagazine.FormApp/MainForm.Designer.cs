@@ -40,10 +40,11 @@
             btnPet.TabIndex = 0;
             btnPet.Text = "Pet";
             btnPet.UseVisualStyleBackColor = true;
+            btnPet.Click += btnPet_Click;
             // 
             // btnCategory
             // 
-            btnCategory.Location = new Point(383, 143);
+            btnCategory.Location = new Point(407, 137);
             btnCategory.Name = "btnCategory";
             btnCategory.Size = new Size(206, 111);
             btnCategory.TabIndex = 1;
@@ -60,6 +61,7 @@
             Controls.Add(btnPet);
             Name = "MainForm";
             Text = "MainForm";
+            Load += MainForm_Load;
             ResumeLayout(false);
         }
 

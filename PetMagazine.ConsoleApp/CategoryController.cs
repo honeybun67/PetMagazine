@@ -5,6 +5,7 @@
     using PetMagazine.Services;
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Linq;
   
     public class CategoryController
@@ -91,7 +92,7 @@
         {
             for (int i = 1; i <= 40; i++)
             {
-                service.Add(new Category() { Name = $"Category {i}" });
+                service.Add(new Category() { Name = $"Category {i}", AgeGroup = $"ageGroup {i}", Medal= $"Medal {i}", Achievements = $"Achievements {i}" });
             }
             UpdatePagination();
         }
@@ -145,9 +146,15 @@
 
         private void AddAction()
         {
-            Console.Write("Enter ganre name: ");
+            Console.Write("Enter category name: ");
             string name = Console.ReadLine();
-            int id = service.Add(new Category() { Name = name });
+            Console.Write("Enter category age group: ");
+            string ageGroup = Console.ReadLine();
+            Console.Write("Enter category medal: ");
+            string medal = Console.ReadLine();
+            Console.Write("Enter category achievements: ");
+            string achievements = Console.ReadLine();
+            int id = service.Add(new Category() { Name = name, AgeGroup = ageGroup, Medal = medal, Achievements = achievements });
             Console.WriteLine(string.Format(OutputMessages.AddCategory, id, name));
             Thread.Sleep(2000);
             UpdatePagination();
