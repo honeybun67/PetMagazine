@@ -13,6 +13,15 @@
     public class PetService
     {
         private AppDbContext context = new AppDbContext();
+        public PetService()
+        {
+            context = new AppDbContext();
+        }
+        public PetService(AppDbContext context)
+        {
+            this.context = context;
+        }
+
 
         //Adding a pet 
         public int Add(Pet pet)
@@ -149,6 +158,20 @@
             {
                 throw new ArgumentException(ExceptionMessages.InvalidAge);
             }
+        }
+
+        public string[] GetBreedsList()
+        {
+            return context.Pets.Select(x => x.Breed)
+                .Distinct()
+                .ToArray();
+        }
+
+        public int EditPetCategories(Pet pet)
+        {
+            context.Pets.Update(pet);
+            context.SaveChanges();
+            return pet.Id;
         }
     }
 }

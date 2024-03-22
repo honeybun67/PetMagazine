@@ -27,7 +27,7 @@ namespace PetMagazine.FormApp
 
         private void btnPet_Click(object sender, EventArgs e)
         {
-            PetForm form = new PetForm();
+            PetForm form = new PetForm(context);
             form.ShowDialog();
         }
 

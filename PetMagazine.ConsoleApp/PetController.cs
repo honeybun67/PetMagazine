@@ -173,7 +173,7 @@
             Console.Write("Enter owner name: ");
             string owner = Console.ReadLine();
             int id = service.Add(new Pet() { Name = name, Age = age, Breed = breed, KindOfPet = kind, Owner = owner });
-            Console.WriteLine(string.Format(OutputMessages.AddPet, id, name));
+            Console.WriteLine(string.Format(OutputMessages.AddPet, id));
             Thread.Sleep(2000);
             UpdatePagination();
         }

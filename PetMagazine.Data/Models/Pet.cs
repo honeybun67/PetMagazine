@@ -22,6 +22,8 @@ namespace PetMagazine.Data.Models
         [MaxLength(150)]
         public string KindOfPet { get; set; }
 
+        public string ImgUrl { get; set; }
+
         public virtual ICollection<PetCategory> Categories { get; set; } = new HashSet<PetCategory> (); 
     }
 }

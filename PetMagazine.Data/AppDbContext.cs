@@ -5,7 +5,7 @@
     public class AppDbContext:DbContext
     {
         //private const string ConnectionString = @"Server=DESKTOP-IMH7B1C\MSSQLSERVER02; Database=PetDb; Trusted_Connection=True; TrustServerCertificate=True";
-        private const string ConnectionString = @"Server=DESKTOP-IMH7B1C\MSSQLSERVER02; Database=PetDb; Trusted_Connection=True; TrustServerCertificate=True";
+        private const string ConnectionString = @"Server=.; Database=PetDb; Trusted_Connection=True; TrustServerCertificate=True";
 
         public DbSet<Pet> Pets { get; set; }
 
