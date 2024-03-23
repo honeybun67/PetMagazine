@@ -69,7 +69,7 @@ namespace PetMagazine.Tests
         }
 
         [Test]
-        public void AddCategoryWithInvalidNameTest()
+ÿ        public void AddCategoryWithInvalidNameTest()
         {
             // Arrange
             // Act
