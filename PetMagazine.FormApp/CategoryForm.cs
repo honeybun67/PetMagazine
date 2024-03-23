@@ -28,19 +28,16 @@
         private void LoadCategories()
         {
             listBox1.Items.Clear();
-            string[] ganres = service.GetCategories(currentPage, itemsPerPage, ascSort)
+            string[] categories = service.GetCategories(currentPage, itemsPerPage, ascSort)
                 .Select(x => $"{x.Id} - {x.Name}")
                 .ToArray();
-            listBox1.Items.AddRange(ganres);
+            listBox1.Items.AddRange(categories);
             lblPageInfo.Text = $"{currentPage}/{pageCount}";
         }
         private void CategoryForm_Load(object sender, EventArgs e)
         {
             btnAcion.Text = rbAdd.Text;
             rbAdd.Checked = true;
-            rbDelete.Enabled = false;
-            rbUpdate.Enabled = false;
-
             //Default asc order
             rbAsc.Checked = true;
 
@@ -112,19 +109,8 @@
             txtAge.Text = info[2];
             txtMedal.Text = info[3];
             txtAchiev.Text = info[4];
-            rbUpdate.Enabled = true;
-            rbDelete.Enabled = true;
-
-            RadioCheckedFalse();
 
             btnAcion.Enabled = false;
-        }
-        private void RadioCheckedFalse()
-        {
-            //Remove radio selection
-            rbAdd.Checked = false;
-            rbDelete.Checked = false;
-            rbUpdate.Checked = false;
         }
 
         private void rbAdd_CheckedChanged(object sender, EventArgs e)
@@ -137,8 +123,7 @@
             txtAge.Text = string.Empty;
             txtMedal.Text = string.Empty;
             txtAchiev.Text = string.Empty;
-            rbUpdate.Enabled = false;
-            rbDelete.Enabled = false;
+
         }
 
         private void rbUpdate_CheckedChanged(object sender, EventArgs e)
@@ -181,7 +166,7 @@
                 }
                 txtId.Text = string.Empty;
                 txtName.Text = string.Empty;
-                RadioCheckedFalse();
+               
                 UpdatePagination();
                 LoadCategories();
             }
