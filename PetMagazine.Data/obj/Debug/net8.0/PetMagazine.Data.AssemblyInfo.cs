@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMagazine.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e254bfd6e56be7f713eef34f943fa7fd00038a9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fe2145d67561df5ea336042146b325fa79c561c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMagazine.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMagazine.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

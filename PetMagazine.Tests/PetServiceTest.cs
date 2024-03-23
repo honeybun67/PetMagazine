@@ -1,17 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Moq;
-using PetMagazine.Common;
-using PetMagazine.Data;
-using PetMagazine.Data.Models;
-using PetMagazine.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PetMagazine.Tests
+﻿namespace PetMagazine.Tests
 {
+    using Microsoft.EntityFrameworkCore;
+    using Moq;
+    using PetMagazine.Common;
+    using PetMagazine.Data;
+    using PetMagazine.Data.Models;
+    using PetMagazine.Services;
     [TestFixture]
     public class PetServiceTest
     {
