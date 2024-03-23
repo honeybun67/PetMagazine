@@ -147,7 +147,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

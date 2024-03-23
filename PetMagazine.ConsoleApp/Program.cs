@@ -6,8 +6,8 @@ namespace PetMagazine.ConsoleApp
     {
         static void Main(string[] args)
         {
-            new CategoryController().Action();
-            //new PetController().Action();
+            //new CategoryController().Action();
+            new PetController().Action();
         }
     }
 }

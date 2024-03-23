@@ -1,28 +1,14 @@
-﻿
-using PetMagazine.Data.Models;
-using PetMagazine.Services;
-using PetMagazine.FormApp.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using PetMagazine.Services.ENums;
-using PetMagazine.Common;
-using PetMagazine.Data;
-using PetMagazine.Common;
-using PetMagazine.Data;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
-using PetMagazine.Services;
-using PetMagazine.FormApp.ViewModels;
+﻿namespace PetMagazine.FormApp
 
-namespace PetMagazine.FormApp
-{
+{   using PetMagazine.Data.Models;
+    using PetMagazine.Services;
+    using PetMagazine.FormApp.ViewModels;
+    using System.Data;
+    using PetMagazine.Services.ENums;
+    using PetMagazine.Common;
+    using PetMagazine.Data;
+    using System.Windows.Forms;
+
     public partial class PetForm : Form
     {
         private PetService petService;
@@ -68,7 +54,7 @@ namespace PetMagazine.FormApp
                     Owner = x.Owner,
                     KindOfPet = x.KindOfPet,
                     Categories = string.Join(", ", x.Categories.Select(x => x.Category.Name)),
-                    // ImageUrl = x.ImageUrl != null ? x.ImageUrl : GlobalConstants.DefaultImg,
+                    ImageUrl = x.ImgUrl != null ? x.ImgUrl : GlobalConstants.DefaultImg,
                 })
                 .ToList();
 
@@ -232,7 +218,7 @@ namespace PetMagazine.FormApp
 
             try
             {
-                pictureBox1.Load(item.Cells[6].Value.ToString());
+                pictureBox1.Load(item.Cells[7].Value.ToString());
             }
             catch (Exception)
             {
@@ -244,6 +230,27 @@ namespace PetMagazine.FormApp
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            var item = dataGridView1.SelectedRows[0];
+            currentPetId = int.Parse(item.Cells[0].Value.ToString());
+            txtName.Text = item.Cells[1].Value.ToString();
+            cmbBreed.Text = item.Cells[2].Value.ToString();
+            txtAge.Text = item.Cells[3].Value.ToString();
+            txtOwner.Text = item.Cells[4].Value.ToString();
+            cmbKind.Text = item.Cells[5].Value.ToString();
+            rbUpdate.Checked = true;
+            try
+            {
+                pictureBox1.Load(item.Cells[6].Value.ToString());
+            }
+            catch (Exception)
+            {
+                pictureBox1.Load(GlobalConstants.DefaultImg);
+            }
+            rbUpdate.Checked = true;
         }
 
         private void rbAdd_CheckedChanged_1(object sender, EventArgs e)
@@ -278,6 +285,11 @@ namespace PetMagazine.FormApp
         {
             _ = cmdOrder.Text == "ASC" ? ascSort = true : ascSort = false;
             LoadBooks();
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

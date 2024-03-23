@@ -1062,7 +1062,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "PetMagazine.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PetMagazine.Data.dll": {}
