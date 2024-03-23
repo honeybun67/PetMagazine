@@ -106,7 +106,7 @@
 
         private void SeedDataAction()
         {
-            for (int i = 11; i <= 30; i++)
+            for (int i = 31; i <= 40; i++)
             {
                 service.Add(new Pet { Name = $"Pet {i} ", Age = i, Breed = $"breed {i} ", Owner = $"owner {i} ", KindOfPet =$"kind {i}"});
             }

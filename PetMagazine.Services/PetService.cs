@@ -39,7 +39,7 @@
         }
 
         //sort by criterion
-        public List<Pet> GetPets(int page = 1, int itemsPerPage = 10, bool ascSort = true, PetSortBy sortBy = PetSortBy.Breed)
+        public List<Pet> GetPets(int page = 1, int animalsPerPage = 10, bool ascSort = true, PetSortBy sortBy = PetSortBy.Breed)
         {
             IQueryable<Pet> result = null;
 
@@ -85,8 +85,8 @@
             }
 
             return result
-                  .Skip((page - 1) * itemsPerPage)
-                  .Take(itemsPerPage)
+                  .Skip((page - 1) * animalsPerPage)
+                  .Take(animalsPerPage)
                   .ToList();
         }
 
@@ -148,7 +148,7 @@
             context.Remove(pet);
             context.SaveChanges();
             return pet.Id;
-            
+
         }
 
         //Validation
