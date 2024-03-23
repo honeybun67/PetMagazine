@@ -111,6 +111,14 @@
             context.SaveChanges();
             return pet.Id;
         }
+        public Pet? GetPetByName(string name)
+        {
+            return this.context.Pets.FirstOrDefault(x => x.Name == name);
+        }
+        public string[] GetAllPets()
+        {
+            return this.context.Pets.Select(x => x.Name).ToArray();
+        }
 
         //Removing a pet
         public int DeletePet(int id)
@@ -166,7 +174,10 @@
                 .Distinct()
                 .ToArray();
         }
-
+        public List<int> GetPetsId()
+        {
+            return this.context.Pets.Select(x => x.Id).ToList();
+        }
         public int EditPetCategories(Pet pet)
         {
             context.Pets.Update(pet);
