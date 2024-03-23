@@ -52,7 +52,11 @@
                 @Html.DisplayFor(modelItem => item.KindOfPet)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImgUrl)
+                    @{
+                        string defaultImage = "https://www.americanhumane.org/app/uploads/2016/08/shutterstock_162633491.jpg";
+                        string image = item.ImgUrl != "" ? item.ImgUrl : defaultImage;
+                    }
+                    <img src="@image" width="200px" height="200px" />
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
