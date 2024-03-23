@@ -30,6 +30,15 @@
         {
             components = new System.ComponentModel.Container();
             dataGridView1 = new DataGridView();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            breedDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ageDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ownerDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            kindOfPetDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            categoriesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ImgUrl = new DataGridViewTextBoxColumn();
+            petViewModelBindingSource3 = new BindingSource(components);
             petViewModelBindingSource1 = new BindingSource(components);
             petViewModelBindingSource = new BindingSource(components);
             btnPrevious = new Button();
@@ -60,22 +69,13 @@
             cmbOrderBy = new ComboBox();
             cmdOrder = new ComboBox();
             petViewModelBindingSource2 = new BindingSource(components);
-            petViewModelBindingSource3 = new BindingSource(components);
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            breedDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ageDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ownerDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            kindOfPetDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            categoriesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ImgUrl = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -91,6 +91,74 @@
             dataGridView1.Size = new Size(892, 411);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick_2;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // breedDataGridViewTextBoxColumn
+            // 
+            breedDataGridViewTextBoxColumn.DataPropertyName = "Breed";
+            breedDataGridViewTextBoxColumn.HeaderText = "Breed";
+            breedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            breedDataGridViewTextBoxColumn.Name = "breedDataGridViewTextBoxColumn";
+            breedDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            ageDataGridViewTextBoxColumn.MinimumWidth = 6;
+            ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            ageDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ownerDataGridViewTextBoxColumn
+            // 
+            ownerDataGridViewTextBoxColumn.DataPropertyName = "Owner";
+            ownerDataGridViewTextBoxColumn.HeaderText = "Owner";
+            ownerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            ownerDataGridViewTextBoxColumn.Name = "ownerDataGridViewTextBoxColumn";
+            ownerDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // kindOfPetDataGridViewTextBoxColumn
+            // 
+            kindOfPetDataGridViewTextBoxColumn.DataPropertyName = "KindOfPet";
+            kindOfPetDataGridViewTextBoxColumn.HeaderText = "KindOfPet";
+            kindOfPetDataGridViewTextBoxColumn.MinimumWidth = 6;
+            kindOfPetDataGridViewTextBoxColumn.Name = "kindOfPetDataGridViewTextBoxColumn";
+            kindOfPetDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // categoriesDataGridViewTextBoxColumn
+            // 
+            categoriesDataGridViewTextBoxColumn.DataPropertyName = "Categories";
+            categoriesDataGridViewTextBoxColumn.HeaderText = "Categories";
+            categoriesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            categoriesDataGridViewTextBoxColumn.Name = "categoriesDataGridViewTextBoxColumn";
+            categoriesDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ImgUrl
+            // 
+            ImgUrl.DataPropertyName = "Id";
+            ImgUrl.HeaderText = "ImgUrl";
+            ImgUrl.MinimumWidth = 6;
+            ImgUrl.Name = "ImgUrl";
+            ImgUrl.Width = 125;
+            // 
+            // petViewModelBindingSource3
+            // 
+            petViewModelBindingSource3.DataSource = typeof(ViewModels.PetViewModel);
             // 
             // petViewModelBindingSource1
             // 
@@ -201,7 +269,6 @@
             label4.Size = new Size(81, 31);
             label4.TabIndex = 11;
             label4.Text = "Owner";
-            label4.Click += label4_Click;
             // 
             // rbAdd
             // 
@@ -291,6 +358,7 @@
             label6.Size = new Size(123, 31);
             label6.TabIndex = 19;
             label6.Text = "Pets Count";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
@@ -311,6 +379,7 @@
             lblCount.Size = new Size(76, 31);
             lblCount.TabIndex = 21;
             lblCount.Text = "label8";
+            lblCount.Click += lblCount_Click;
             // 
             // lblPages
             // 
@@ -376,74 +445,6 @@
             // 
             petViewModelBindingSource2.DataSource = typeof(ViewModels.PetViewModel);
             // 
-            // petViewModelBindingSource3
-            // 
-            petViewModelBindingSource3.DataSource = typeof(ViewModels.PetViewModel);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            nameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // breedDataGridViewTextBoxColumn
-            // 
-            breedDataGridViewTextBoxColumn.DataPropertyName = "Breed";
-            breedDataGridViewTextBoxColumn.HeaderText = "Breed";
-            breedDataGridViewTextBoxColumn.MinimumWidth = 6;
-            breedDataGridViewTextBoxColumn.Name = "breedDataGridViewTextBoxColumn";
-            breedDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            ageDataGridViewTextBoxColumn.HeaderText = "Age";
-            ageDataGridViewTextBoxColumn.MinimumWidth = 6;
-            ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            ageDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ownerDataGridViewTextBoxColumn
-            // 
-            ownerDataGridViewTextBoxColumn.DataPropertyName = "Owner";
-            ownerDataGridViewTextBoxColumn.HeaderText = "Owner";
-            ownerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            ownerDataGridViewTextBoxColumn.Name = "ownerDataGridViewTextBoxColumn";
-            ownerDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // kindOfPetDataGridViewTextBoxColumn
-            // 
-            kindOfPetDataGridViewTextBoxColumn.DataPropertyName = "KindOfPet";
-            kindOfPetDataGridViewTextBoxColumn.HeaderText = "KindOfPet";
-            kindOfPetDataGridViewTextBoxColumn.MinimumWidth = 6;
-            kindOfPetDataGridViewTextBoxColumn.Name = "kindOfPetDataGridViewTextBoxColumn";
-            kindOfPetDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // categoriesDataGridViewTextBoxColumn
-            // 
-            categoriesDataGridViewTextBoxColumn.DataPropertyName = "Categories";
-            categoriesDataGridViewTextBoxColumn.HeaderText = "Categories";
-            categoriesDataGridViewTextBoxColumn.MinimumWidth = 6;
-            categoriesDataGridViewTextBoxColumn.Name = "categoriesDataGridViewTextBoxColumn";
-            categoriesDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ImgUrl
-            // 
-            ImgUrl.DataPropertyName = "Id";
-            ImgUrl.HeaderText = "ImgUrl";
-            ImgUrl.MinimumWidth = 6;
-            ImgUrl.Name = "ImgUrl";
-            ImgUrl.Width = 125;
-            // 
             // PetForm
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
@@ -481,13 +482,13 @@
             Load += PetForm_Load;
             DoubleClick += PetForm_DoubleClick;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).EndInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

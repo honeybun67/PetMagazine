@@ -1,6 +1,6 @@
 ﻿namespace PetMagazine.FormApp
-
-{   using PetMagazine.Data.Models;
+{
+    using PetMagazine.Data.Models;
     using PetMagazine.Services;
     using PetMagazine.FormApp.ViewModels;
     using System.Data;
@@ -76,37 +76,51 @@
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            if ((currentPage - 1) > 0)
+            try
             {
-                currentPage--;
+                if ((currentPage - 1) > 0)
+                {
+                    currentPage--;
+                }
+                else
+                {
+                    currentPage = pageCount;
+                }
+                LoadBooks();
             }
-            else
+            catch (Exception ex)
             {
-                currentPage = pageCount;
+                MessageBox.Show(ex.Message);
             }
-            LoadBooks();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (currentPage + 1 <= pageCount)
+            try
             {
-                currentPage++;
+                if (currentPage + 1 <= pageCount)
+                {
+                    currentPage++;
+                }
+                else
+                {
+                    currentPage = 1;
+                }
+                LoadBooks();
             }
-            else
+            catch (Exception ex)
             {
-                currentPage = 1;
+                MessageBox.Show(ex.Message);
             }
-            LoadBooks();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (petService.GetPetsCount() < 10)
+            if (petService.GetPetsCount() < 40)
             {
                 List<int> categories = categoryService.GetCategoriesId();
 
-                for (int i = 0; i < 50; i++)
+                for (int i = 1; i < 60; i++)
                 {
                     Pet pet = new Pet()
                     {
@@ -131,6 +145,73 @@
             lblPages.Text = $"{currentPage}/{pageCount}";
         }
 
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            var item = dataGridView1.SelectedRows[0];
+            currentPetId = int.Parse(item.Cells[0].Value.ToString());
+            txtName.Text = item.Cells[1].Value.ToString();
+            cmbBreed.Text = item.Cells[2].Value.ToString();
+            txtAge.Text = item.Cells[3].Value.ToString();
+            txtOwner.Text = item.Cells[4].Value.ToString();
+            cmbKind.Text = item.Cells[5].Value.ToString();
+            rbUpdate.Checked = true;
+            try
+            {
+                pictureBox1.Load(item.Cells[6].Value.ToString());
+            }
+            catch (Exception)
+            {
+                pictureBox1.Load(GlobalConstants.DefaultImg);
+            }
+            rbUpdate.Checked = true;
+        }
+
+        private void btnGanres_Click(object sender, EventArgs e)
+        {
+            PetCategoriesForm form = new PetCategoriesForm(petService, categoryService, currentPetId);
+            form.ShowDialog();
+        }
+
+        private void PetForm_DoubleClick(object sender, EventArgs e)
+        {
+            var item = dataGridView1.SelectedRows[0];
+            currentPetId = int.Parse(item.Cells[0].Value.ToString());
+            txtName.Text = item.Cells[1].Value.ToString();
+            cmbBreed.Text = item.Cells[2].Value.ToString();
+            txtAge.Text = item.Cells[3].Value.ToString();
+            txtOwner.Text = item.Cells[4].Value.ToString();
+            cmbKind.Text = item.Cells[5].Value.ToString();
+            rbUpdate.Checked = true;
+
+            try
+            {
+                pictureBox1.Load(item.Cells[7].Value.ToString());
+            }
+            catch (Exception)
+            {
+                pictureBox1.Load(GlobalConstants.DefaultImg);
+            }
+            rbUpdate.Checked = true;
+        }
+
+
+        private void rbAdd_CheckedChanged_1(object sender, EventArgs e)
+        {
+            btnAction.Text = "Add";
+            ClearComponents();
+            cmbBreed.Items.AddRange(petService.GetBreedsList());
+        }
+
+        private void rbUpdate_CheckedChanged_1(object sender, EventArgs e)
+        {
+            btnAction.Text = "Update";
+        }
+
+        private void rbDelete_CheckedChanged_1(object sender, EventArgs e)
+        {
+            btnAction.Text = "Delete";
+        }
+
 
         public void ClearComponents()
         {
@@ -140,6 +221,7 @@
             txtOwner.Text = string.Empty;
             cmbKind.Items.Clear();
         }
+
 
         private void btnAction_Click(object sender, EventArgs e)
         {
@@ -199,77 +281,6 @@
             }
         }
 
-        private void btnGanres_Click(object sender, EventArgs e)
-        {
-            PetCategoriesForm form = new PetCategoriesForm(petService, categoryService, currentPetId);
-            form.ShowDialog();
-        }
-
-        private void PetForm_DoubleClick(object sender, EventArgs e)
-        {
-            var item = dataGridView1.SelectedRows[0];
-            currentPetId = int.Parse(item.Cells[0].Value.ToString());
-            txtName.Text = item.Cells[1].Value.ToString();
-            cmbBreed.Text = item.Cells[2].Value.ToString();
-            txtAge.Text = item.Cells[3].Value.ToString();
-            txtOwner.Text = item.Cells[4].Value.ToString();
-            cmbKind.Text = item.Cells[5].Value.ToString();
-            rbUpdate.Checked = true;
-
-            try
-            {
-                pictureBox1.Load(item.Cells[7].Value.ToString());
-            }
-            catch (Exception)
-            {
-                pictureBox1.Load(GlobalConstants.DefaultImg);
-            }
-            rbUpdate.Checked = true;
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_DoubleClick(object sender, EventArgs e)
-        {
-            var item = dataGridView1.SelectedRows[0];
-            currentPetId = int.Parse(item.Cells[0].Value.ToString());
-            txtName.Text = item.Cells[1].Value.ToString();
-            cmbBreed.Text = item.Cells[2].Value.ToString();
-            txtAge.Text = item.Cells[3].Value.ToString();
-            txtOwner.Text = item.Cells[4].Value.ToString();
-            cmbKind.Text = item.Cells[5].Value.ToString();
-            rbUpdate.Checked = true;
-            try
-            {
-                pictureBox1.Load(item.Cells[6].Value.ToString());
-            }
-            catch (Exception)
-            {
-                pictureBox1.Load(GlobalConstants.DefaultImg);
-            }
-            rbUpdate.Checked = true;
-        }
-
-        private void rbAdd_CheckedChanged_1(object sender, EventArgs e)
-        {
-            btnAction.Text = "Add";
-            ClearComponents();
-            cmbBreed.Items.AddRange(petService.GetBreedsList());
-        }
-
-        private void rbUpdate_CheckedChanged_1(object sender, EventArgs e)
-        {
-            btnAction.Text = "Update";
-        }
-
-        private void rbDelete_CheckedChanged_1(object sender, EventArgs e)
-        {
-            btnAction.Text = "Delete";
-        }
-
         private void PetForm_Load(object sender, EventArgs e)
         {
 
@@ -288,6 +299,16 @@
         }
 
         private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCount_Click(object sender, EventArgs e)
         {
 
         }
