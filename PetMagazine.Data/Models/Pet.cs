@@ -3,6 +3,7 @@ namespace PetMagazine.Data.Models
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using PetMagazine.Common;
 
     public class Pet
     {
@@ -22,7 +23,7 @@ namespace PetMagazine.Data.Models
         [MaxLength(150)]
         public string KindOfPet { get; set; }
 
-        public string ImgUrl { get; set; }
+        public string ImgUrl { get; set; } = GlobalConstants.DefaultImg;
 
         public virtual ICollection<PetCategory> Categories { get; set; } = new HashSet<PetCategory> (); 
     }

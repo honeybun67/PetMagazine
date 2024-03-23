@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {}
+    "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
+    "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj",
-        "projectName": "PetMagazine.Data",
-        "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\obj\\",
+        "projectUniqueName": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj",
+        "projectName": "PetMagazine.Common",
+        "projectPath": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj",
+        "packagesPath": "C:\\Users\\Мустафа\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Мустафа\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,79 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj",
+        "projectName": "PetMagazine.Data",
+        "projectPath": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj",
+        "packagesPath": "C:\\Users\\Мустафа\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Мустафа\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
+                "projectPath": "C:\\Users\\Мустафа\\Desktop\\IT_kariera\\М07-SD\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,7 +158,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

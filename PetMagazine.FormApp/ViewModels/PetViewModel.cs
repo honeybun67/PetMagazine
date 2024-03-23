@@ -15,5 +15,7 @@
         public string KindOfPet { get; set; }
 
         public string Categories { get; set; }
+
+        public string ImageUrl { get; set; }
     }
 }

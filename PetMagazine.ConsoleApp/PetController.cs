@@ -88,7 +88,7 @@
 
         private void AdoptAction()
         {
-            Console.WriteLine("Enter pet id: ");
+            Console.Write("Enter pet id: ");
             int adoptId = int.Parse(Console.ReadLine());
             service.AdoptPet( adoptId );
             Console.WriteLine(string.Format(OutputMessages.AdoptedPet, adoptId));

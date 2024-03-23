@@ -73,6 +73,10 @@ namespace PetMagazine.Data.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
+                    b.Property<string>("ImgUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("KindOfPet")
                         .IsRequired()
                         .HasMaxLength(150)
@@ -84,7 +88,6 @@ namespace PetMagazine.Data.Migrations
                         .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("Owner")
-                        .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
