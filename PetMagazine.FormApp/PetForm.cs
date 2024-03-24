@@ -30,6 +30,10 @@
             petService = new PetService(context);
         }
 
+        public PetForm()
+        {
+        }
+
         private void PetsForm_Load(object sender, EventArgs e)
         {
             UpdatePagination();
@@ -271,5 +275,6 @@
             PetCategoriesForm form = new PetCategoriesForm(petService, categoryService, currentPetId);
             form.ShowDialog();
         }
+
     }
 }

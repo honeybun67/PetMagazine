@@ -20,12 +20,11 @@ namespace PetMagazine.FormApp
         CategoryService categoryService;
         Pet currentPet;
 
-
         public PetCategoriesForm(PetService petService, CategoryService categoryService, int petId)
         {
             InitializeComponent();
-            this.petService = petService;
-            this.categoryService = categoryService;
+            this.petService = new PetService();
+            this.categoryService = new CategoryService();
             currentPet = petService.GetPetById(petId);
         }
 
