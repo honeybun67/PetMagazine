@@ -50,11 +50,6 @@ namespace PetMagazine.FormApp
             }
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             currentPet.Categories.Clear();
