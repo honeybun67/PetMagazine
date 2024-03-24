@@ -3072,11 +3072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
       "projectName": "PetMagazine.FormApp",
-      "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.FormApp\\PetMagazine.FormApp.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.FormApp\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.FormApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3093,14 +3093,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj"
+            "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Common\\PetMagazine.Common.csproj"
             },
-            "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj"
+            "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Data\\PetMagazine.Data.csproj"
             },
-            "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj"
+            "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj"
             }
           }
         }

@@ -69,6 +69,7 @@
             cmbOrderBy = new ComboBox();
             cmdOrder = new ComboBox();
             petViewModelBindingSource2 = new BindingSource(components);
+            btnPet = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource1).BeginInit();
@@ -90,7 +91,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(892, 411);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick_2;
+            dataGridView1.DoubleClick += dataGridView1_DoubleClick_1;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -322,12 +323,12 @@
             // 
             // btnAction
             // 
-            btnAction.Location = new Point(486, 449);
+            btnAction.Location = new Point(411, 442);
             btnAction.Margin = new Padding(4, 3, 4, 3);
             btnAction.Name = "btnAction";
-            btnAction.Size = new Size(175, 100);
+            btnAction.Size = new Size(142, 100);
             btnAction.TabIndex = 16;
-            btnAction.Text = "button2";
+            btnAction.Text = "Action";
             btnAction.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -358,7 +359,6 @@
             label6.Size = new Size(123, 31);
             label6.TabIndex = 19;
             label6.Text = "Pets Count";
-            label6.Click += label6_Click;
             // 
             // label7
             // 
@@ -379,7 +379,6 @@
             lblCount.Size = new Size(76, 31);
             lblCount.TabIndex = 21;
             lblCount.Text = "label8";
-            lblCount.Click += lblCount_Click;
             // 
             // lblPages
             // 
@@ -434,6 +433,7 @@
             // cmdOrder
             // 
             cmdOrder.FormattingEnabled = true;
+            cmdOrder.Items.AddRange(new object[] { "ASC", "DESC" });
             cmdOrder.Location = new Point(1139, 651);
             cmdOrder.Margin = new Padding(4, 3, 4, 3);
             cmdOrder.Name = "cmdOrder";
@@ -445,11 +445,22 @@
             // 
             petViewModelBindingSource2.DataSource = typeof(ViewModels.PetViewModel);
             // 
+            // btnPet
+            // 
+            btnPet.Location = new Point(575, 442);
+            btnPet.Name = "btnPet";
+            btnPet.Size = new Size(156, 91);
+            btnPet.TabIndex = 28;
+            btnPet.Text = "Pet";
+            btnPet.UseVisualStyleBackColor = true;
+            btnPet.Click += btnPet_Click;
+            // 
             // PetForm
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1663, 764);
+            ClientSize = new Size(1697, 764);
+            Controls.Add(btnPet);
             Controls.Add(cmdOrder);
             Controls.Add(cmbOrderBy);
             Controls.Add(label9);
@@ -479,8 +490,6 @@
             Margin = new Padding(5, 4, 5, 4);
             Name = "PetForm";
             Text = "PetForm";
-            Load += PetForm_Load;
-            DoubleClick += PetForm_DoubleClick;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource3).EndInit();
             ((System.ComponentModel.ISupportInitialize)petViewModelBindingSource1).EndInit();
@@ -535,5 +544,6 @@
         private BindingSource petViewModelBindingSource2;
         private DataGridViewTextBoxColumn ImgUrl;
         private BindingSource petViewModelBindingSource3;
+        private Button btnPet;
     }
 }

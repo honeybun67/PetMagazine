@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AetOQumlW+Kx2ydlRLdx6aAs7bK+0cuE9ph3A3pURXwm1btuKVzmzCD0OGj/tb6J32PQQT2BZTux7K793zn2Xw==",
+  "dgSpecHash": "ii4TVrWj7mvhUy4nB3kF3qb3XCV22nT0kJ7VgxNnRt/dKF9qxOHcNzggU14hAdYb8Q5Q47VkzR5qleHx5jvC+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\PetMagazineFinal\\PetMagazine\\PetMagazine.Services\\PetMagazine.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

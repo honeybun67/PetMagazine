@@ -33,7 +33,7 @@
         private void PetsForm_Load(object sender, EventArgs e)
         {
             UpdatePagination();
-            LoadBooks();
+            LoadPets();
             pictureBox1.Load(GlobalConstants.DefaultImg);
 
             cmbOrderBy.Items.AddRange(System.Enum.GetNames<PetSortBy>());
@@ -41,7 +41,7 @@
             cmbOrderBy.SelectedIndex = 0;
         }
 
-        private void LoadBooks()
+        private void LoadPets()
         {
             dataGridView1.DataSource = petService
                 .GetPets(currentPage, animalsPerPage, ascSort, sortBy)
@@ -63,55 +63,33 @@
 
             lblPages.Text = $"{currentPage}/{pageCount}";
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if ((currentPage - 1) > 0)
-                {
-                    currentPage--;
-                }
-                else
-                {
-                    currentPage = pageCount;
-                }
-                LoadBooks();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
+            if ((currentPage - 1) > 0)
+            {
+                currentPage--;
+            }
+            else
+            {
+                currentPage = pageCount;
+            }
+            LoadPets();
+
+        }
         private void btnNext_Click(object sender, EventArgs e)
         {
-            try
+
+            if (currentPage + 1 <= pageCount)
             {
-                if (currentPage + 1 <= pageCount)
-                {
-                    currentPage++;
-                }
-                else
-                {
-                    currentPage = 1;
-                }
-                LoadBooks();
+                currentPage++;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                currentPage = 1;
             }
+            LoadPets();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -166,33 +144,6 @@
             rbUpdate.Checked = true;
         }
 
-        private void btnGanres_Click(object sender, EventArgs e)
-        {
-            PetCategoriesForm form = new PetCategoriesForm(petService, categoryService, currentPetId);
-            form.ShowDialog();
-        }
-
-        private void PetForm_DoubleClick(object sender, EventArgs e)
-        {
-            var item = dataGridView1.SelectedRows[0];
-            currentPetId = int.Parse(item.Cells[0].Value.ToString());
-            txtName.Text = item.Cells[1].Value.ToString();
-            cmbBreed.Text = item.Cells[2].Value.ToString();
-            txtAge.Text = item.Cells[3].Value.ToString();
-            txtOwner.Text = item.Cells[4].Value.ToString();
-            cmbKind.Text = item.Cells[5].Value.ToString();
-            rbUpdate.Checked = true;
-
-            try
-            {
-                pictureBox1.Load(item.Cells[7].Value.ToString());
-            }
-            catch (Exception)
-            {
-                pictureBox1.Load(GlobalConstants.DefaultImg);
-            }
-            rbUpdate.Checked = true;
-        }
 
 
         private void rbAdd_CheckedChanged_1(object sender, EventArgs e)
@@ -273,7 +224,7 @@
                 currentPetId = -1;
                 ClearComponents();
                 UpdatePagination();
-                LoadBooks();
+                LoadPets();
             }
             catch (Exception ex)
             {
@@ -281,36 +232,44 @@
             }
         }
 
-        private void PetForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void cmbOrderBy_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             sortBy = Enum.Parse<PetSortBy>(cmbOrderBy.Text);
-            LoadBooks();
+            LoadPets();
         }
 
         private void cmdOrder_SelectedIndexChanged(object sender, EventArgs e)
         {
             _ = cmdOrder.Text == "ASC" ? ascSort = true : ascSort = false;
-            LoadBooks();
+            LoadPets();
         }
 
-        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_DoubleClick_1(object sender, EventArgs e)
         {
+            var item = dataGridView1.SelectedRows[0];
+            currentPetId = int.Parse(item.Cells[0].Value.ToString());
+            txtName.Text = item.Cells[1].Value.ToString();
+            cmbBreed.Text = item.Cells[2].Value.ToString();
+            txtAge.Text = item.Cells[3].Value.ToString();
+            txtOwner.Text = item.Cells[4].Value.ToString();
+            cmbKind.Text = item.Cells[5].Value.ToString();
+            rbUpdate.Checked = true;
 
+            try
+            {
+                pictureBox1.Load(item.Cells[7].Value.ToString());
+            }
+            catch (Exception)
+            {
+                pictureBox1.Load(GlobalConstants.DefaultImg);
+            }
+            rbUpdate.Checked = true;
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void btnPet_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblCount_Click(object sender, EventArgs e)
-        {
-
+            PetCategoriesForm form = new PetCategoriesForm(petService, categoryService, currentPetId);
+            form.ShowDialog();
         }
     }
 }

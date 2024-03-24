@@ -143,7 +143,9 @@
             // 
             // comboBox1
             // 
+            comboBox1.DisplayMember = "5,10,15";
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "5", "10", "15" });
             comboBox1.Location = new Point(685, 560);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(114, 28);
